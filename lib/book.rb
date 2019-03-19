@@ -25,4 +25,5 @@ arr = []
       book.genre = genre
       book_arr << book
     end
+puts Book::GENRES
 binding.pry
