@@ -18,10 +18,10 @@ class Shoe
     @brand = brand
   end
 end
-shoe_closet = []
-brands = ["Uggs", "Rainbow", "Nike", "Nike"]
-brands.each do |brand|
-  shoe_closet << Shoe.new(brand)
-end
-shoe_closet.each{|x| puts x.brand}
-binding.pry
+# shoe_closet = []
+# brands = ["Uggs", "Rainbow", "Nike", "Nike"]
+# brands.each do |brand|
+#   shoe_closet << Shoe.new(brand)
+# end
+# shoe_closet.each{|x| puts x.brand}
+# binding.pry
