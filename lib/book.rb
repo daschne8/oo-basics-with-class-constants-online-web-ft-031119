@@ -1,3 +1,4 @@
+require 'pry'
 class Book
   attr_accessor :author, :page_count  # remove the attr_accessor for genre
   attr_reader :title, :genre  # add an attr_reader for genre
@@ -18,3 +19,6 @@ class Book
     GENRES << genre
   end
 end
+book_arr = []
+["Thriller","Romance"].each {|genre|book_arr << Book.new(genre) }
+binding.pry
