@@ -20,5 +20,8 @@ class Book
   end
 end
 book_arr = []
-["Thriller","Romance"].each {|genre|book_arr << Book.new(genre) }
+["Thriller","Romance"].each_with_index do |genre, i|
+      book = Book.new("Book_#{i}")
+      book.genre = genre
+    end
 binding.pry
