@@ -19,7 +19,7 @@ class Book
     GENRES << genre
   end
 end
-book_arr = []
+arr = []
 ["Thriller","Romance"].each_with_index do |genre, i|
       book = Book.new("Book_#{i}")
       book.genre = genre
