@@ -23,5 +23,6 @@ book_arr = []
 ["Thriller","Romance"].each_with_index do |genre, i|
       book = Book.new("Book_#{i}")
       book.genre = genre
+      book_arr << book
     end
 binding.pry
